@@ -1,0 +1,33 @@
+---
+title: "A minimal targets report"
+author: "Elliot Gould"
+date: '`r Sys.Date()`'
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+options(tidyverse.quiet = TRUE)
+```
+
+This is a minimal Rmarkdown report utilising targets created by a targets pipeline.
+
+We can include targets with `tar_read()` and `tar_load()`
+
+```{r}
+library(tidyverse)
+library(targets)
+```
+
+```{r}
+tar_read(analysis_data)
+```
+
+```{r}
+tar_read(diversity_BG_plot)
+```
+
+```{r}
+tar_load(diversity_BG_fit)
+summary(diversity_BG_fit)
+```
