@@ -7,7 +7,8 @@ summarised_data %>%
 }
 
 plot_diversity_bare_ground <- function(summarised_data){
-  summarised_data %>% 
+  # WILL ERROR!!
+  my_data %>% 
     ggplot(aes(y = IndigSpp_transect_t, x = BareGround_t)) +
     geom_point() +
     theme_bw()
