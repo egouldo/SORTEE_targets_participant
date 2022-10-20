@@ -24,5 +24,5 @@ list(
                  site_management_data, 
                  0)),
   tar_target(name = diversity_BG_plot,
-             command = plot_diversity_bare_ground(summarised_data))
+             command = plot_diversity_bare_ground(analysis_data))
 )
