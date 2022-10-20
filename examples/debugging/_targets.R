@@ -1,5 +1,5 @@
 # --------- Example Code, 03-DEBUGGING --------------
-# Eeplace `./_targets.R` with this file (`./examples/_targets.R`)
+# Replace `./_targets.R` with this file (`./examples/_targets.R`)
 library(targets)
 suppressPackageStartupMessages(library(tidyverse, quietly = TRUE))
 tar_source("R/")
