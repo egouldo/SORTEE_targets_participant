@@ -16,7 +16,7 @@ summarise_by_mu <- function(field_data_by_transect, year = c(0:5)) {
   field_data_by_management_unit <-
     field_data_by_transect %>%
     dplyr::group_by(management_unit) %>%
-    dplyr::summarise(BG_pc = mean(BG_mean),
+    dplyr::summarise(BG_pc = mean(NG_mean),
                      E_pc = mean(E_mean),
                      E_diversity = mean(E_diversity),
                      NF_diversity = mean(NF_diversity)) %>%
